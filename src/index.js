@@ -8,9 +8,9 @@ import { CouterProvider } from './Context/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CouterProvider>
-    <App />
-    </CouterProvider>
+<CouterProvider>
+<App />
+</CouterProvider>
   </React.StrictMode>
 );
 

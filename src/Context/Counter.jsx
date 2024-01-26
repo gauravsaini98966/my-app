@@ -1,9 +1,10 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 export  const CounterContext =createContext(null);
-export const CouterProvider= ()=>{
+export const CouterProvider= (props)=>{
+    const [count,setCount]=useState(0);
     return(
-        <CounterContext.Provider>
-            
+        <CounterContext.Provider  value={{count,setCount,name:"gaurav"}}>
+            {props.children}
         </CounterContext.Provider>
     )
 }
